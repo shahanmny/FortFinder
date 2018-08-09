@@ -12,6 +12,9 @@ class IndexHandler(webapp2.RequestHandler):
         index_template = the_ninja_env.get_template("Templates/index.html")
         self.response.write(index_template.render())
 
+class StatsHandler(webapp2.RequestHandler):
+    def get(self):
+        #fortnite_response = urlfetch.fetch("https://url").content
 
 app = webapp2.WSGIApplication([
     ('/', IndexHandler)
