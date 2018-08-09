@@ -17,5 +17,6 @@ class StatsHandler(webapp2.RequestHandler):
         #fortnite_response = urlfetch.fetch("https://url").content
 
 app = webapp2.WSGIApplication([
-    ('/', IndexHandler)
+    ('/', IndexHandler),
+    ('/stats', StatsHandler)
 ], debug=True)
