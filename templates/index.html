@@ -5,6 +5,26 @@
     <title>Gamehub</title>
     <link rel="stylesheet" href="style.css"/>
   </head>
+
+<style>
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+
   <body>
     <div id="wrapper" class="container">
       <nav>
@@ -14,6 +34,7 @@
     <header>
       <h1>Gamehub</h1>
     </header>
+
 <div class = "text-center">
   <form action="/stats">
     <input type="text" name="" value="Username">
@@ -22,8 +43,7 @@
   <form action="/stats">
     <select name="games">
       <option value="Fortnite">Fortnite</option>
-      <option value=""></option>
-      <option value=""></option>
+      <option value="PubG">PubG</option>
     </select>
 
   <form action="/stats">
@@ -35,12 +55,24 @@
 <br><br>
     <input type="submit">
   </form>
-    <p>Check your game stats!</p>
+    <p><h2>Check your game stats and see your rank!<h2></p>
 </div>
     <section>
     </section>
     <section>
     </section>
     </div>
+
+<div class="dropdown">
+    <span><h3>Menu<h3></span>
+  <div class="dropdown-content">
+    <p>Home</p>
+    <p>Games</p>
+    <p>Leaderboards</p>
+    <p>Help</p>
+    <p>Contact Us</p>
+  </div>
+</div>
+
   </body>
 </html>
