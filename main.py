@@ -16,7 +16,11 @@ class IndexHandler(webapp2.RequestHandler):
 
 class StatsHandler(webapp2.RequestHandler):
     def get(self):
+<<<<<<< HEAD
         header = {'TRN-Api-Key': '44231534-d4ed-41fc-8e82-99ea6733085e'}
+=======
+        headers = {'TRN-Api-Key': '44231534-d4ed-41fc-8e82-99ea6733085e'}
+>>>>>>> 3ee4a390c5b4e0ab255114c0dce97927bbf6025c
         platform = "pc"
         username = "Ninja"
         fortnite_response = urlfetch.fetch("https://api.fortnitetracker.com/v1/profile/" + platform + "/" + username, headers = headers).content
