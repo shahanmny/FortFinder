@@ -22,7 +22,33 @@ class StatsHandler(webapp2.RequestHandler):
         username = "Ninja"
         fortnite_response = urlfetch.fetch("https://api.fortnitetracker.com/v1/profile/" + platform + "/" + username, headers = headers).content
         fortnite_dict = json.loads(fortnite_response)
-        self.response.write(fortnite_dict['lifeTimeStats'])
+        #for lifeTimeStats in fortnite_dict['Stats']
+        #    for kills in lifeTimeStats['Kills']
+
+
+
+
+
+        kills = {}
+        wins = {}
+        for each_stat in fortnite_dict['lifeTimeStats']:
+            if each_stat['key'] == "Kills":
+                kills = each_stat
+            if each_stat['key'] == "Wins":
+                wins = each_stat
+        self.response.write(kills)
+
+
+
+
+
+
+#for question_dict in trivia_as_json['results']:
+#            self.response.write(question_dict['question'])
+#            self.response.write(question_dict['correct_answer'])
+#            self.response.write('<br><br>')
+
+
 
 app = webapp2.WSGIApplication([
     ('/', IndexHandler),
