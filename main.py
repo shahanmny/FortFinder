@@ -16,6 +16,7 @@ class IndexHandler(webapp2.RequestHandler):
 
 class StatsHandler(webapp2.RequestHandler):
     def get(self):
+
         headers = {'TRN-Api-Key': '44231534-d4ed-41fc-8e82-99ea6733085e'}
         platform = "pc"
         username = "Ninja"
