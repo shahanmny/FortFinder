@@ -17,10 +17,10 @@ class IndexHandler(webapp2.RequestHandler):
 class StatsHandler(webapp2.RequestHandler):
     def get(self):
         header = {'TRN-Api-Key': '44231534-d4ed-41fc-8e82-99ea6733085e'}
-        fortnite_response = urlfetch.fetch("https://api.fortnitetracker.com/v1/profile/" + platform + "/" + username, headers = headers).content
-        run = requests.get(fortnite_response, header)
         platform = pc
         username = Ninja
+        fortnite_response = urlfetch.fetch("https://api.fortnitetracker.com/v1/profile/" + platform + "/" + username, headers = headers).content
+        run = json.loads(fortnite_response)
         results = run.json()[lifeTimeStats]
         print(results)
 
