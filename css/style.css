@@ -1,12 +1,21 @@
 body {
-  background-color: #370d38;
+  background-color: #044141;
 }
 
 h1 {
   text-align: center;
-  color: white;
+  color: #E65000;
+  font-size: 50px;
+  font-family: sans-serif;
 }
 
 div.container {
   text-align: center;
+}
+
+div.dropdown {
+  color: #E65000;
+  text-align: left;
+  border-style: groove;
+
 }
