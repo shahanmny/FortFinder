@@ -15,18 +15,6 @@ class IndexHandler(webapp2.RequestHandler):
         self.response.write(index_template.render())
 
     def post(self):
-        self.response.write("hi")
-
-class StatsHandler(webapp2.RequestHandler):
-    def get(self):
-        stats_template = the_jinja_env.get_template("Templates/stats.html")
-        self.response.write(stats_template.render())
-        #for question_dict in trivia_as_json['results']:
-        #            self.response.write(question_dict['question'])
-        #            self.response.write(question_dict['correct_answer'])
-        #            self.response.write('<br><br>')
-
-    def post(self):
         stats_template = the_jinja_env.get_template("Templates/stats.html")
         headers = {'TRN-Api-Key': '44231534-d4ed-41fc-8e82-99ea6733085e'}
         platform = self.request.get('platform')
@@ -56,6 +44,17 @@ class StatsHandler(webapp2.RequestHandler):
 
         self.response.write(stats_template.render(var_dict))
 
+class StatsHandler(webapp2.RequestHandler):
+    def get(self):
+        stats_template = the_jinja_env.get_template("Templates/stats.html")
+        self.response.write(stats_template.render())
+        #for question_dict in trivia_as_json['results']:
+        #            self.response.write(question_dict['question'])
+        #            self.response.write(question_dict['correct_answer'])
+        #            self.response.write('<br><br>')
+
+    def post(self):
+        self.response.write('hi')
 
 app = webapp2.WSGIApplication([
     ('/', IndexHandler),
