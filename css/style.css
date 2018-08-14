@@ -4,8 +4,9 @@ body {
 }
 
 h1 {
+  font-family: 'Russo One', sans-serif;
   text-align: center;
-  color: white;
+  color: #EDEDE7;
   font-size: 50px;
   font-family: sans-serif;
 }
@@ -15,6 +16,7 @@ h2 {
 }
 
 h3 {
+  color: #EDEDE7
 	font-size: 24pt;
   font-family: 'Volkhov', serif;
 }
