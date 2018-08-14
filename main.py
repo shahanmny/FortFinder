@@ -40,8 +40,8 @@ class IndexHandler(webapp2.RequestHandler):
 
 class StatsHandler(webapp2.RequestHandler):
     def get(self):
-        home_template = the_ninja_env.get_template("Templates/stats.html")
-        self.response.write(home_template.render())
+        stats_template = the_jinja_env.get_template("Templates/stats.html")
+        self.response.write(stats_template.render())
     #for question_dict in trivia_as_json['results']:
     #            self.response.write(question_dict['question'])
     #            self.response.write(question_dict['correct_answer'])
