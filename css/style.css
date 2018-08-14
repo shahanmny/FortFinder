@@ -28,7 +28,7 @@ nav {
 .container {
   text-align: center;
   display: grid;
-  grid-template-columns: 10% auto;
+  grid-template-columns: 15% auto;
 }
 
 form {
@@ -59,7 +59,7 @@ form {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 10%;
+  width: 15%;
   overflow: auto;
 }
 
