@@ -89,7 +89,7 @@ a {
 }
 
 a.active {
-	background-color: #4CAF50;
+	background-color: darkgray;
     color: white;
 }
 
