@@ -20,21 +20,23 @@
 					<li><a>Contact Us</a></li>
 				</ul>
 			</nav>
-			<header>
+			<header class="position">
 			  <h1>Gamehub</h1>
 			</header>
 			<section></section>
-      <section>
+      <section class="position">
         <h2>Fortnite</h2>
       </section>
       <section></section>
-			<div class="text-center">
+			<div class="text-center position">
 				<h2>Here are your stats:</h2>
-        <p>Kills: {{kills}}</p>
-        <p>Wins: {{wins}}</p>
-        <p>Matches Played: {{matches}}</p>
-        <p>Win Percentage: {{win_percentage}}</p>
-        <p>K/D: {{k_d}}</p>
+        <ul class="stats-ul">
+          <li class="stats-li">Kills: {{kills}}</li>
+          <li class="stats-li">Wins: {{wins}}</li>
+          <li class="stats-li">Matches Played: {{matches}}</li>
+          <li class="stats-li">Win Percentage: {{win_percentage}}</li>
+          <li class="stats-li">K/D: {{k_d}}</li>
+        </ul>
 			</div>
 		</div>
 	</body>

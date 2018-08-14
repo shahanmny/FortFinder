@@ -26,6 +26,19 @@ nav {
   margin: 0;
 }
 
+.position {
+  margin-right: 10%;
+}
+
+.stats-ul {
+  color: white;
+  list-style-type: none;
+}
+
+.stats-li {
+  margin-top: 1%;
+}
+
 .container {
   text-align: center;
   display: grid;
@@ -49,6 +62,7 @@ form {
 	margin: 0;
 	padding: 0;
 	padding: 14px 16px;
+  background-color:  #ffffff;
 }
 
 .dropdown-content {
