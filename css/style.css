@@ -52,7 +52,7 @@ form {
 }
 
 .dropdown {
-  color: darkgray;
+  color: white;
   text-align: center;
   position: relative;
   display: inline-block;
@@ -64,13 +64,12 @@ form {
 	margin: 0;
 	padding: 0;
 	padding: 14px 16px;
-  background-color:  #ffffff;
 }
 
 .dropdown-content {
   display: none;
   position: fixed;
-  background-color: #f9f9f9;
+  background-color: #9598A3;
   padding: 14px 16px;
   z-index: 1;
   list-style-type: none;
