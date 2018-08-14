@@ -25,13 +25,8 @@ class StatsHandler(webapp2.RequestHandler):
         #for lifeTimeStats in fortnite_dict['Stats']
         #    for kills in lifeTimeStats['Kills']
 
-
-
-
-
         kills = {}
         wins = {}
-        matches = each_stat
         for each_stat in fortnite_dict['lifeTimeStats']:
             if each_stat['key'] == "Kills":
                 kills = each_stat
@@ -40,12 +35,10 @@ class StatsHandler(webapp2.RequestHandler):
             if each_stat['key'] == "Matches Played":
                 matches = each_stat
 
-        self.response.write(kills)
-
-
-
-
-
+        print(kills)
+        print(wins)
+        # self.response.write(kills)
+        # self.response.write(wins)
 
 #for question_dict in trivia_as_json['results']:
 #            self.response.write(question_dict['question'])
