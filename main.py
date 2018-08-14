@@ -14,9 +14,8 @@ class IndexHandler(webapp2.RequestHandler):
         index_template = the_jinja_env.get_template("Templates/index.html")
         self.response.write(index_template.render())
 
-class StatsHandler(webapp2.RequestHandler):
-    def get(self):
-
+    def post(self):
+        stats_template = the_jinja_env.get_template("Templates/stats.html")
         headers = {'TRN-Api-Key': '44231534-d4ed-41fc-8e82-99ea6733085e'}
         platform = "pc"
         username = "Ninja"
@@ -35,17 +34,18 @@ class StatsHandler(webapp2.RequestHandler):
             if each_stat['key'] == "Matches Played":
                 matches = each_stat
 
-        print(kills)
-        print(wins)
-        # self.response.write(kills)
-        # self.response.write(wins)
 
-#for question_dict in trivia_as_json['results']:
-#            self.response.write(question_dict['question'])
-#            self.response.write(question_dict['correct_answer'])
-#            self.response.write('<br><br>')
+        self.response.write(stats_template.render(kills))
+        self.response.write(stats_template.render(wins))
 
-
+class StatsHandler(webapp2.RequestHandler):
+    def get(self):
+        home_template = the_ninja_env.get_template("Templates/stats.html")
+        self.response.write(home_template.render())
+    #for question_dict in trivia_as_json['results']:
+    #            self.response.write(question_dict['question'])
+    #            self.response.write(question_dict['correct_answer'])
+    #            self.response.write('<br><br>')
 
 app = webapp2.WSGIApplication([
     ('/', IndexHandler),
