@@ -31,11 +31,15 @@ class StatsHandler(webapp2.RequestHandler):
 
         kills = {}
         wins = {}
+        matches = each_stat
         for each_stat in fortnite_dict['lifeTimeStats']:
             if each_stat['key'] == "Kills":
                 kills = each_stat
             if each_stat['key'] == "Wins":
                 wins = each_stat
+            if each_stat['key'] == "Matches Played":
+                matches = each_stat
+
         self.response.write(kills)
 
 
