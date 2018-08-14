@@ -88,12 +88,12 @@ a {
 }
 
 a.active {
-	background-color: darkgray;
+	background-color: #423b3d;
     color: white;
 }
 
 a:hover:not(.active) {
-	background-color: #555;
+	background-color: #51525b;
     color: white;
 }
 
