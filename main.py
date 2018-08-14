@@ -12,7 +12,7 @@ autoescape=True)
 
 class IndexHandler(webapp2.RequestHandler):
     def get(self):
-        index_template = the_jinja_env.get_template("Templates/index.html")
+        index_template = the_jinja_env.get_template("templates/index.html")
         self.response.write(index_template.render())
 
     def post(self):
@@ -20,7 +20,7 @@ class IndexHandler(webapp2.RequestHandler):
 
 class StatsHandler(webapp2.RequestHandler):
     def get(self):
-        stats_template = the_jinja_env.get_template("Templates/stats.html")
+        stats_template = the_jinja_env.get_template("templates/stats.html")
         self.response.write(stats_template.render())
         #for question_dict in trivia_as_json['results']:
         #            self.response.write(question_dict['question'])
@@ -28,7 +28,7 @@ class StatsHandler(webapp2.RequestHandler):
         #            self.response.write('<br><br>')
 
     def post(self):
-        stats_template = the_jinja_env.get_template("Templates/stats.html")
+        stats_template = the_jinja_env.get_template("templates/stats.html")
         headers = {'TRN-Api-Key': '44231534-d4ed-41fc-8e82-99ea6733085e'}
         platform = self.request.get('platform')
         username = self.request.get('username')
