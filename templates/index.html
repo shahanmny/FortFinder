@@ -2,58 +2,52 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8"/>
-    <title>Gamehub</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <title>GameHub</title>
+    <link rel="stylesheet" href="style.css"/>
   </head>
 
   <body>
     <div id="wrapper" class="container">
-      <nav>
-        <ul>
-        </ul>
+      <nav class="dropdown">
+          <span><h3>Menu<h3></span>
+        <div class="dropdown-content">
+          <ul class="dropdown-content-list">
+            <li><a>Home</a></li>
+            <li><a>Games</a></li>
+            <li><a>Leaderboards</a></li>
+            <li><a>Help</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
       </nav>
-    <header>
-      <h1>Gamehub</h1>
-    </header>
-
-<div class = "text-center">
-  <form action="/stats">
-    <input type="text" name="" value="Username">
-  </form>
-
-  <form action="/stats">
-    <select name="games">
-      <option value="Fortnite">Fortnite</option>
-      <option value="PubG">PubG</option>
-    </select>
-
-  <form action="/stats">
-    <select name="Platform">
-      <option value="Playstation">Playstation</option>
-      <option value="Xbox">Xbox</option>
-      <option value="PC">PC</option>
-    </select>
-<br><br>
-    <input type="submit">
-  </form>
-    <p><h2>Check your game stats and see your rank!<h2></p>
-</div>
-    <section>
-    </section>
-    <section>
-    </section>
+      <header>
+        <h1>GameHub</h1>
+      </header>
+      <section></section>
+      <div class = "text-center">
+        <form action="/stats">
+          <input type="text" name="" value="Username">
+        </form>
+        <form action="/stats">
+          <select name="games">
+            <option value="Fortnite">Fortnite</option>
+            <option value="PubG">PubG</option>
+          </select>
+        <form action="/stats">
+          <select name="Platform">
+            <option value="Playstation">Playstation</option>
+            <option value="Xbox">Xbox</option>
+            <option value="PC">PC</option>
+          </select>
+          <br><br>
+          <input type="submit">
+        </form>
+          <h2>Check your game stats and see your rank!</h2>
+      </div>
+      <section>
+      </section>
+      <section>
+      </section>
     </div>
-
-<div class="dropdown">
-    <span><h3>Menu<h3></span>
-  <div class="dropdown-content">
-    <p>Home</p>
-    <p>Games</p>
-    <p>Leaderboards</p>
-    <p>Help</p>
-    <p>Contact Us</p>
-  </div>
-</div>
-
   </body>
 </html>
