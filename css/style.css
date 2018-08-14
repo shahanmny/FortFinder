@@ -1,5 +1,5 @@
 body {
-  background-color: #044141;
+  background-color: #121516;
   margin: 0;
 }
 
@@ -33,7 +33,7 @@ form {
 }
 
 .dropdown {
-  color: black;
+  color: darkgray;
   text-align: center;
   position: relative;
   display: inline-block;
