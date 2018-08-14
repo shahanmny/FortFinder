@@ -17,8 +17,9 @@ class IndexHandler(webapp2.RequestHandler):
     def post(self):
         stats_template = the_jinja_env.get_template("Templates/stats.html")
         headers = {'TRN-Api-Key': '44231534-d4ed-41fc-8e82-99ea6733085e'}
-        platform = "pc"
-        username = "Ninja"
+        platform = self.request.get('platform')
+        username = self.request.get('username')
+        game = self.request.get('games')
         fortnite_response = urlfetch.fetch("https://api.fortnitetracker.com/v1/profile/" + platform + "/" + username, headers = headers).content
         fortnite_dict = json.loads(fortnite_response)
         #for lifeTimeStats in fortnite_dict['Stats']
