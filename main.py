@@ -48,8 +48,13 @@ class StatsHandler(webapp2.RequestHandler):
             if each_stat['key'] == "Matches Played":
                 matches = each_stat
 
-        self.response.write(stats_template.render(kills))
-        self.response.write(stats_template.render(wins))
+        var_dict = {
+            "kills": kills['value'],
+            "wins": wins['value'],
+            "matches": matches['value']
+        }
+
+        self.response.write(stats_template.render(var_dict))
 
 
 app = webapp2.WSGIApplication([
