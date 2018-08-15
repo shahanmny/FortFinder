@@ -7,7 +7,6 @@ body {
 }
 
 h1 {
-  font-family: 'Russo One', sans-serif;
   text-align: center;
   color: #EDEDE7;
   font-size: 60pt;
@@ -22,7 +21,6 @@ h2 {
 h3 {
   color: #EDEDE7
 	font-size: 24pt;
-  font-family: 'Volkhov', serif;
 }
 
 nav {
