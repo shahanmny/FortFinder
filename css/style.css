@@ -27,6 +27,76 @@ nav {
   margin: 0;
 }
 
+input[type=text] {
+  width: 150px;
+  padding: 8px 16px;
+  background-color: rgba(0,0,0,.2);
+  border: 2px solid white;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+}
+
+input[type=text]:focus {
+    border: 2px solid white;
+    outline: 1px solid rgba(0,0,0,0);
+}
+
+input[type=text]:hover {
+    border: 2px solid white;
+    outline: 1px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,.5);
+}
+
+select {
+  width: 120px;
+  padding: 4px 6px;
+  background-color:rgba(0,0,0,0.2);
+  color: white;
+  border: 2px solid white;
+  font-size: 16px;
+}
+
+select:focus {
+    border: 2px solid white;
+    outline: 1px solid rgba(0,0,0,0);
+}
+
+select:hover {
+    border: 2px solid white;
+    outline: 1px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,.5);
+
+}
+
+select option {
+  background-color:rgba(0,0,0);
+}
+
+input[type=submit]:hover {
+    border: 2px solid white;
+    outline: 1px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,.5);
+}
+
+input[type=submit] {
+  width: 100px;
+  padding: 4px 6px;
+  background-color: rgba(0,0,0,.2);
+  color: white;
+  border: 2px solid white;
+  font-size: 16px;
+}
+
+option {
+  width: 120px;
+  padding: 4px 6px;
+  background-color: rgba(0,0,0,.2);
+  color: white;
+  border: 2px solid white;
+  font-size: 16px;
+}
+
 .position {
   margin-right: 10%;
 }
@@ -60,6 +130,7 @@ form {
 .nav-first-ul {
 	list-style-type: none;
 	text-align: center;
+  background-color: rgba(0,0,0,.4);
 	margin: 0;
 	padding: 0;
 	padding: 14px 16px;
@@ -86,12 +157,12 @@ a {
 }
 
 a.active {
-	background-color: #24201d;
+	background-color: rgba(0,0,0,.8);
     color: white;
 }
 
 a:hover:not(.active) {
-	background-color: #2a3436;
+	background-color: rgba(0,0,0,.4);
     color: white;
 }
 
