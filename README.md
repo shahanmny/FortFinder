@@ -1,7 +1,5 @@
 # Fort Finder
-Fort Finder
-
-The Presentation below will explain the application
+The Presentation below explains the web application
   
   https://docs.google.com/presentation/d/16iOZtx8j_YoHFGHn2iZsqDf76GzJOn5ebN99Dngudx8/edit?usp=sharing
   
