@@ -1,5 +1,5 @@
-# GameHub
-GameHub has now been changed to Fort Finder
+# Fort Finder
+Fort Finder
 
 The Presentation below will explain the application
   
